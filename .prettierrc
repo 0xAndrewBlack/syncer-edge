@@ -7,7 +7,5 @@
     "bracketSpacing": true,
     "jsxBracketSameLine": true,
     "endOfLine": "lf",
-    "plugins": [
-        "prettier-plugin-organize-imports"
-    ]
+    "plugins": []
 }
