@@ -1,5 +1,8 @@
 <h1 align=center>Syncer Edge API</h1>
 
+> **Note**
+> This project is in a `Work In-Progress` phase.
+
 ## Overview
 
 This project utilizes Next.js's built-in API routes to create a serverless API. The API routes are located in the `pages/api` directory.
