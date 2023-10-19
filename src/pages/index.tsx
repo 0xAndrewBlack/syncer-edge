@@ -1,8 +1,14 @@
-import type { FC } from "react";
+import { FC, useState } from "react";
 
 const Index: FC = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
+
   return (
-    <>
+    <div className={isDarkMode ? "dark-mode" : "light-mode"}>
       <h1>Syncer Edge API</h1>
 
       <p>
@@ -16,7 +22,11 @@ const Index: FC = () => {
         rel="noopener noreferrer">
         GitHub Project
       </a>
-    </>
+
+      <button onClick={toggleDarkMode}>
+        {isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+      </button>
+    </div>
   );
 };
 

@@ -1,0 +1,20 @@
+:root {
+  --background-color-light: #fff;
+  --text-color-light: #000;
+  --background-color-dark: #222;
+  --text-color-dark: #fff;
+}
+
+* {
+  margin: 0;
+}
+
+.light-mode {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
